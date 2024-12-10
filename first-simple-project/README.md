@@ -29,15 +29,18 @@ Ensure you have the following installed on your system:
 Navigate to the project directory and run the following command to build the Docker image:
 ```bash
 docker build -t node-docker-app .
+```
 
 ### Step 2: Run the Docker Container
 Run the built image to see the output:
 ```bash
 docker run -it node-docker-app
+```
 
 You should see:
 ```bash
 Hello to Docker with JS
+```
 
 ## How it Works
 
@@ -52,14 +55,17 @@ To remove the Docker container and image after testing:
 ```bash
 docker ps -a
 docker stop <container-id>
+```
 
 2. Remove the container:
 ```bash
 docker rm <container-id>
+```
 
 3. Remove the image:
 ```bash
 docker rmi node-docker-app
+```
 
 
 
